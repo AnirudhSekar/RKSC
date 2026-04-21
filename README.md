@@ -5,13 +5,6 @@ Benchmarking notebook for **RKSC** — a training-free inference acceleration fr
 - **ASKS** (Attention-Similarity KV Sharing) — computes the shared prefix KV cache once and broadcasts it to all branches via hidden-state cosine similarity gating, eliminating redundant O(n²) prefill for B−1 branches.
 - **CGEE** (Confidence-Gated Early Exit) — skips the verification forward pass when the highest-confidence branch is decisive, saving ~180ms per problem when triggered.
  
-**Key results** across 5 model families (7B–10B) and 4 benchmark datasets:
-| Metric | Value |
-|---|---|
-| Mean KV speedup | 1.664× |
-| Mean RKSC speedup (KV + CGEE) | 1.896× |
-| Peak speedup | 2.198× (Falcon3-10B, ARC-Challenge) |
-| Accuracy regressions | 0 across 1,000 problems |
 
 ## Requirements
  
