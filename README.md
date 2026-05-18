@@ -25,7 +25,7 @@ The notebook is self-contained and designed to be run top-to-bottom in Google Co
 ## License
 MIT License
 
-Copyright (c) 2026 Anonymous
+Copyright (c) 2026 Anirudh Sekar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
